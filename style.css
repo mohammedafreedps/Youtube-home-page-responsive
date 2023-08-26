@@ -1,0 +1,389 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    --bg-color: rgb(31, 31, 31);
+    --serchbtn-clr: rgb(63, 63, 63);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+}
+
+.topbar {
+    position: fixed;
+    min-height: 4rem;
+    width: 100%;
+    background-color: var(--bg-color);
+}
+
+.topelements {
+    display: flex;
+    justify-content: space-between;
+}
+
+.part {
+    display: flex;
+    min-height: 4rem;
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input {
+    border-radius: 30px 0px 0 30px;
+    padding-left: 2rem;
+    width: 30rem;
+    height: 3rem;
+    background-color: var(--serchbtn-clr);
+    border: solid rgb(70, 70, 70);
+
+}
+
+.logopart {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.search-button {
+    border-radius: 0 30px 30px 0px;
+    width: 7rem;
+    height: 3.4rem;
+    background-color: var(--serchbtn-clr);
+    border: solid rgb(70, 70, 70);
+
+}
+
+.part button {
+    background-image: url(/Assets/search.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 2rem;
+}
+
+.left {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 3rem;
+    height: 4rem;
+    gap: 40%;
+}
+
+.mover {
+    display: flex;
+    justify-content: start;
+}
+
+.menu {
+    margin-left: 2rem;
+    width: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+
+.sidelogo {
+    width: 8rem;
+    margin-left: 4rem;
+}
+
+.useridpart {
+    justify-content: end;
+}
+
+.right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 14rem;
+    height: 4rem;
+}
+
+.rr {
+    width: 2.7rem;
+    height: 2.4rem;
+}
+
+.r1 {
+    background-image: url(/Assets/video\ add.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.r2 {
+    background-image: url(/Assets/notification.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.r3 {
+    background-color: rgb(119, 238, 22);
+    border-radius: 60px;
+    background-image: url(/Assets/profile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media screen and (max-width: 768px) {
+    .search-input {
+        display: none;
+    }
+
+    .search-button {
+        border-radius: 30px;
+        width: 7rem;
+        height: 3.3rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .searcharea {
+        width: 3rem;
+    }
+}
+
+.sidemenulong {
+    padding-top: 4rem;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.condent {
+    overflow-y: scroll;
+    position: fixed;
+    width: 15rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+
+}
+
+.condent::-webkit-scrollbar {
+    display: none;
+}
+
+.sideelement {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    border-radius: 12px;
+    margin-bottom: 2.4rem;
+}
+
+.icon {
+    padding-left: 1rem;
+    width: 3rem;
+    height: 3rem;
+    background-image: url(/Assets/home.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 1.9rem;
+}
+
+.spacer-vid {
+    margin-left: 15rem;
+    width: 4rem;
+    height: 100vh;
+}
+
+.conterntspace {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.vids {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-auto-rows: 19rem;
+    gap: 20px;
+
+    width: 100%;
+    height: 100vh;
+    padding-left: 18rem;
+    padding-top: 1rem;
+}
+
+.cols {
+
+    justify-content: center;
+    width: 25rem;
+    margin-bottom: 3rem;
+    height: 20rem;
+
+
+}
+
+.vi {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 20rem;
+    max-height: 19rem;
+}
+
+.thumbnail {
+    border-radius: 9px;
+    background-image: url(/Assets/thumbnail.jpg);
+    background-size: contain;
+    width: 100%;
+    height: 12rem;
+}
+
+.prif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    border-radius: 50px;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(214, 144, 144);
+}
+
+.text {
+    display: flex;
+
+}
+
+.tittle {
+    margin-left: 0.9rem;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+
+.chname {
+    font-weight: normal;
+    color: gray;
+    font-size: 1rem;
+}
+
+.counts {
+    font-weight: normal;
+    color: gray;
+}
+
+@media screen and (max-width: 768px) {
+    .condent {
+        display: none;
+
+    }
+
+    .sideelement {
+        display: none;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .vids {
+        padding-left: 9rem;
+    }
+
+    .menu {
+        margin-left: 2rem;
+        width: 2rem;
+        display: block;
+    }
+
+    .sidelogo {
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+    .vids {
+        padding-left: 6rem;
+    }
+}
+
+.sidemenubar {
+    position: fixed;
+    top: 4rem;
+    left: -5rem;
+    width: 5rem;
+    height: 90vh;
+    display: none;
+
+}
+
+.icon1 {
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 1.9rem;
+}
+.sideelement:hover{
+    background-color: black;
+    border-radius: 40px;
+}
+.icon1:hover{
+    background-color: black;
+    border-radius: 40px;
+}
+.vi:hover{
+    background-color: rgb(61, 61, 61);
+    border-radius: 40px;
+}
+.menu:hover{
+    background-color: rgb(109, 109, 109);
+    border-radius: 50px;
+}
+.rr:hover{
+    background-color: rgb(54, 54, 54);
+    border-radius: 40px;
+}
+
+.home {
+    background-image: url(/Assets/home.svg);
+}
+
+.shorts {
+    background-image: url(/Assets/shorts.png);
+}
+
+.subscriptions {
+    background-image: url(/Assets/subsription.png);
+}
+
+.libary {
+    background-image: url(/Assets/library.png);
+}
+
+.history {
+    background-image: url(/Assets/hisstory.png);
+}
+
+.yourvideo {
+    background-image: url(/Assets/yourvideo.png);
+}
+
+.watchlater {
+    background-image: url(/Assets/watchlater.png);
+}
+
+.likedvideos {
+    background-image: url(/Assets/liked.png);
+}
